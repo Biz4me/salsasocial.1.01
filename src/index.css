@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-orange: #FF7755;
+  --primary-purple: #7B6EFF;
+  --primary-blue: #1A237E;
+  --primary-yellow: #FFB74D;
+  --background: #F8F9FA;
+  --text-primary: #1A1A1A;
+  --text-secondary: #757575;
+}
+
+body {
+  @apply bg-[#F8F9FA];
+  font-family: 'Inter', sans-serif;
+}
+
+.course-card {
+  @apply bg-white rounded-3xl p-6 shadow-sm mb-4;
+}
+
+.course-number {
+  @apply w-12 h-12 rounded-2xl flex items-center justify-center text-white font-semibold text-lg;
+}
+
+.nav-icon {
+  @apply w-6 h-6 text-gray-600;
+}
+
+.nav-active {
+  @apply text-blue-600;
+}
+
+.subject-card {
+  @apply rounded-2xl p-4 flex items-center justify-center aspect-square;
+}
+
+.subject-card.design {
+  @apply bg-[#FF7755];
+}
+
+.subject-card.chemistry {
+  @apply bg-[#7B6EFF];
+}
+
+.subject-card.science {
+  @apply bg-[#1A237E];
+}
+
+.subject-card.maths {
+  @apply bg-[#FFB74D];
+}
+
+.mentor-card {
+  @apply flex items-center space-x-3 bg-white rounded-2xl p-4 shadow-sm;
+}
+
+.avatar {
+  @apply w-12 h-12 rounded-full object-cover;
+}
